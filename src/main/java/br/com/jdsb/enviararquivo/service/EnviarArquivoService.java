@@ -33,7 +33,6 @@ public class EnviarArquivoService {
         request.setNomeArquivo(Constante.TESTE_TXT);
         var status = sendFileCommand.send(request);
         log.info("status de envio para {} {}",Constante.TESTE_TXT,status);
-        System.out.println(mapper.writeValueAsString(request));
     }
 
     private void enviarPDF() throws IOException {
@@ -42,7 +41,6 @@ public class EnviarArquivoService {
         request.setNomeArquivo(Constante.EXAMPLE_PDF);
         var status = sendFileCommand.send(request);
         log.info("status de envio para {} {}",Constante.EXAMPLE_PDF,status);
-        System.out.println(mapper.writeValueAsString(request));
     }
 
     private void enviarAUDIO() throws IOException {
@@ -51,7 +49,6 @@ public class EnviarArquivoService {
         request.setNomeArquivo(Constante.AUDIO_OGG);
         var status = sendFileCommand.send(request);
         log.info("status de envio para {} {}",Constante.AUDIO_OGG,status);
-        System.out.println(mapper.writeValueAsString(request));
     }
 
     private void enviarPNG() throws IOException {
@@ -60,7 +57,6 @@ public class EnviarArquivoService {
         request.setNomeArquivo(Constante.SMILE_PNG);
         var status = sendFileCommand.send(request);
         log.info("status de envio para {} {}",Constante.SMILE_PNG,status);
-        System.out.println(mapper.writeValueAsString(request));
     }
 
 }
